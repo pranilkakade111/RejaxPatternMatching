@@ -43,7 +43,13 @@ public class Validate
               System.out.print(phoneNumber+" is invalid Phone number"); 
 
           System.out.println();
+          
+          
       }
+      
+      String passwd = "aaZZa44@"; 
+      String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}";
+      System.out.println(passwd.matches(pattern));
    }
    
    public static boolean firstName( String firstName ) 
